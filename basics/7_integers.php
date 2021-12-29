@@ -27,7 +27,7 @@ var_dump($overflow);
 # strings - first non-numeric character causes everything after that point to be dropped
 $myText = 's120str12';
 var_dump((int) $myText);
-# null - convertd into zero
+# null - converted into zero
 # is_int - returns true/false if a variable is an int
 # php 7.4+ - you can use underscore to make it more readable
 $veryLongNumber = 200_200_150;

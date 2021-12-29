@@ -32,5 +32,6 @@ var_dump(is_nan(log(-1)));
 
 # casting
 # similar to casting ints,
-$x = '15.15a';
+# strings - after first non-numeric character, everything is dropped
+$x = '15.15a'; // gets converted into 15.15
 var_dump((float) $x);

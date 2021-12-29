@@ -11,6 +11,6 @@ $isComplete = true; // stick to one - upper or lowercase
 # null = false
 # anything else, that's not empty, is equal to true
 
-# in order to print falase value, you have to cast it into string
+# in order to print false value, you have to cast it into string
 $myValue = (string) false;
 var_dump($myValue);

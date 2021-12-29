@@ -91,3 +91,12 @@ var_dump(array_key_exists('b', $array)); // returns true, as this key is set
 
 # checks both key and value
 var_dump(isset($array['b'])); // returns false, as the value assigned to that key is false
+
+// let's set and array of letters, indexed from 0 to 4 included
+$array = ['a', 'b', 'c', 'd', 'e'];
+// let's remove the element at index 4, which is the last one
+unset($array[2], $array[3]);
+// let's add an element to the end of an array
+$array[] = 'N';
+// turns out the index of the added element is not 4, but 5
+print_r($array);

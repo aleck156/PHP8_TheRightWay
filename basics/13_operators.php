@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-# operator takes one or more expressions and evaluates them into a value
+# operator takes one or more expressions/operands and evaluates them into a value
 
 # aritmetic operators (+ - * / % **)
 # adding an aritmetic operator to a string causes it to be converted into an int or a float
@@ -43,6 +43,7 @@ echo $x;
     # strict comparison, checks data types, no casting
 # <=>
     # spaceship operator
+    # can be used with ints, float, string, arrays
     # returns -1, 0, 1 values
         # -1 - first expression is less than the second
         # 0 - both expressions are equal

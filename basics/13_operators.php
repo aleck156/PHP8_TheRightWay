@@ -63,7 +63,7 @@ var_dump($x === $y);
 
 # null coalesce operator ??
     # returns first expression if it's not null
-    # otherwise it returns the second expression
+    # otherwise it returns the second expression, whatever its value may be
     # useful for working with undefined variables
 $x = null;
 $y = $x ?? 'hello';

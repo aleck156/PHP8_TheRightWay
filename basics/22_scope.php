@@ -13,6 +13,7 @@ echo $x;
 
 echo '<br/>';
 
+// functions have LOCAL scope
 function foo(int $x){
   // $x = 1;
   global $x;

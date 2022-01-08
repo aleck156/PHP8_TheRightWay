@@ -58,7 +58,7 @@ function foo($element){
 // ARROW FUNCTIONS
 // PHP 7.x and onward
 // cleaner syntax
-// useful for inlince functions
+// useful for inline functions
 // you can always access the variables of the parent scope without the need to use any keywords
     // which is a bad practice, as you already know
     // access by value, to prevent from any possible fuck ups

@@ -5,7 +5,7 @@ declare(strict_types=1);
 /*
 apache config
     /usr/local/apacke2/conf
-    //var/logs/httpd
+    /var/logs/httpd
 
 modules - extensions of apache functionality
 directives
@@ -29,6 +29,8 @@ htaccess
     allow to make changes on per-directory basis
     they're read on every request
     changes are effective immediately, all it takes is just to reload a page
+    not all directives can be put here
+        AllowOverride All - this CAN be put here
 don't use it unless you really need it
     only when you don't have access to root server
     impact servers performance
@@ -37,6 +39,9 @@ disable htaccess completely to save time on loading pages
     AllowOverride None in httpd.conf at a global directive
 even rewriting URL's is the most common use-case, yet still it's ineffective
 
-REWATCH THIS VIDEO ONCE AGAIN, YOU DIDN'T LEARN IT!
+mod_rewrite.c module
+    allows to override url rules, like removing .php from webpage addresses
 
+REWATCH THIS VIDEO ONCE AGAIN, YOU DIDN'T LEARN IT!
+YOU NEED TO LEARN MORE ON APACHE CONFIGURATION
 */
